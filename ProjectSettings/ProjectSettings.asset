@@ -941,11 +941,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: bd90d731-13d7-4b93-a0da-fee9faf7c710
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: XRMPT
-  organizationId: 
+  projectName: Hackathon-III
+  organizationId: rodrexst6
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

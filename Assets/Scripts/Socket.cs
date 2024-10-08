@@ -17,10 +17,14 @@ public class Socket : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject other = collision.gameObject;
+        Debug.Log("Enter object");
         if (other.CompareTag("Battery") && battery.isCharged)
         {
+            Debug.Log("Enter baterry");
             tv.GetComponent<MeshRenderer>().material = materials[materialNumber];
         }
+        
+            
     }
 
     private void OnCollisionExit(Collision collision)

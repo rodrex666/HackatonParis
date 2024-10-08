@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 3403168753973869446, guid: bf2c1de309ebb4643ba5e3a592b5d0ca,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4844378340238414026, guid: bf2c1de309ebb4643ba5e3a592b5d0ca,
         type: 3}
@@ -7826,6 +7826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Energy Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301157747362824711, guid: 3b43b42cb458fb74180dacc9fa684a15,
+        type: 3}
+      propertyPath: m_TagString
+      value: Battery
       objectReference: {fileID: 0}
     - target: {fileID: 7933439173474080957, guid: 3b43b42cb458fb74180dacc9fa684a15,
         type: 3}

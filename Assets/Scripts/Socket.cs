@@ -14,16 +14,18 @@ public class Socket : MonoBehaviour
 
     public int materialNumber = 0;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
+        GameObject other = collision.gameObject;
         if (other.CompareTag("Battery") && battery.isCharged)
         {
             tv.GetComponent<MeshRenderer>().material = materials[materialNumber];
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
+        GameObject other = collision.gameObject;
         if (other.CompareTag("Battery"))
         {
             tv.GetComponent<MeshRenderer>().material = defaultMaterial;

@@ -8,6 +8,8 @@ public class Battery : MonoBehaviour
 
     public bool isCharged = true;
 
+    public GameObject light;
+
 
     void Update()
     {
@@ -24,11 +26,13 @@ public class Battery : MonoBehaviour
     void TimerEnded()
     {
         isCharged = false;
+        light.SetActive(false);
     }
 
     public void Charging()
     {
         isCharged = true;
         targetTime = 60.0f;
+        light.SetActive(true);
     }
 }

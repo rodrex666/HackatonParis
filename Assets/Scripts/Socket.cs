@@ -14,6 +14,8 @@ public class Socket : MonoBehaviour
 
     public int materialNumber = 0;
 
+    public AudioSource audioS;
+
     private void OnCollisionEnter(Collision collision)
     {
         GameObject other = collision.gameObject;
@@ -22,6 +24,7 @@ public class Socket : MonoBehaviour
         {
             Debug.Log("Enter baterry");
             tv.GetComponent<MeshRenderer>().material = materials[materialNumber];
+            audioS.Play();
         }
         
             
@@ -33,6 +36,7 @@ public class Socket : MonoBehaviour
         if (other.CompareTag("Battery"))
         {
             tv.GetComponent<MeshRenderer>().material = defaultMaterial;
+            audioS.Pause();
         }
     }
 }

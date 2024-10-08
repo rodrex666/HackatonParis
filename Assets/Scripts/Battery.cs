@@ -4,7 +4,7 @@ using System.Collections;
 public class Battery : MonoBehaviour
 {
 
-    public float targetTime = 60.0f;
+    public float targetTime = 20.0f;
 
     public bool isCharged = true;
 

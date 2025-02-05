@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Socket : MonoBehaviour
 {
-    public GameObject tv;
+    public GameObject tv, col;
 
     public Battery battery;
 
@@ -25,6 +25,7 @@ public class Socket : MonoBehaviour
             Debug.Log("Enter baterry");
             tv.GetComponent<MeshRenderer>().material = materials[materialNumber];
             audioS.Play();
+            col.SetActive(true);
         }
         
             
